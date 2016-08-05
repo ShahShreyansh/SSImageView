@@ -7,6 +7,7 @@
     <customFonts key="customFonts">
         <mutableArray key="HelveticaNeue.ttc">
             <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -22,16 +23,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Shreyansh Shah" borderStyle="line" textAlignment="justified" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="enQ-Ex-pT4">
-                                <rect key="frame" x="190" y="25" width="390" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="ybd-yq-Cae"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C2Q-KG-f0h">
-                                <rect key="frame" x="190" y="104" width="390" height="42"/>
+                                <rect key="frame" x="160" y="104" width="420" height="42"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
                                 <state key="normal" title="Refresh">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -41,10 +34,10 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Op5-KX-foY" customClass="SSImageView" customModule="InitialLatter" customModuleProvider="target">
-                                <rect key="frame" x="20" y="25" width="150" height="150"/>
+                                <rect key="frame" x="20" y="25" width="120" height="120"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="Tl4-kz-Krb"/>
-                                    <constraint firstAttribute="width" constant="150" id="YX7-HE-K6P"/>
+                                    <constraint firstAttribute="height" constant="120" id="Tl4-kz-Krb"/>
+                                    <constraint firstAttribute="width" constant="120" id="YX7-HE-K6P"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
@@ -53,22 +46,80 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fm8-Vi-TAv">
+                                <rect key="frame" x="0.0" y="299" width="600" height="2"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="WyL-uF-y13"/>
+                                </constraints>
+                            </view>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Shreyanh Shah" borderStyle="line" textAlignment="justified" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fve-o9-cGY">
+                                <rect key="frame" x="20" y="321" width="420" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="vdQ-W8-WnA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qrT-T2-sTH" customClass="SSImageView" customModule="InitialLatter" customModuleProvider="target">
+                                <rect key="frame" x="460" y="321" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="NuK-4t-Rcc"/>
+                                    <constraint firstAttribute="height" constant="120" id="zGt-kW-xbs"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HNz-FA-Mnc">
+                                <rect key="frame" x="20" y="400" width="420" height="42"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="submitBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hMG-lm-bKh"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Shreyansh Shah" borderStyle="line" textAlignment="justified" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="enQ-Ex-pT4">
+                                <rect key="frame" x="160" y="25" width="420" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ybd-yq-Cae"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="fve-o9-cGY" firstAttribute="top" secondItem="Fm8-Vi-TAv" secondAttribute="bottom" constant="20" id="0pR-1V-Oeq"/>
+                            <constraint firstItem="fve-o9-cGY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="4hO-x5-Jxv"/>
+                            <constraint firstItem="HNz-FA-Mnc" firstAttribute="trailing" secondItem="fve-o9-cGY" secondAttribute="trailing" id="7k2-0X-rYG"/>
                             <constraint firstItem="Op5-KX-foY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="IEY-MX-4f5"/>
+                            <constraint firstItem="qrT-T2-sTH" firstAttribute="top" secondItem="fve-o9-cGY" secondAttribute="top" id="IzN-Uy-MUV"/>
+                            <constraint firstItem="Fm8-Vi-TAv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Klf-Ez-zjM"/>
                             <constraint firstAttribute="trailing" secondItem="enQ-Ex-pT4" secondAttribute="trailing" constant="20" id="Q7z-ps-uUE"/>
+                            <constraint firstItem="qrT-T2-sTH" firstAttribute="leading" secondItem="fve-o9-cGY" secondAttribute="trailing" constant="20" id="RXi-rj-Kgt"/>
+                            <constraint firstAttribute="trailing" secondItem="Fm8-Vi-TAv" secondAttribute="trailing" id="UmU-T6-Eoa"/>
                             <constraint firstItem="Op5-KX-foY" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="25" id="WIe-3g-FEj"/>
+                            <constraint firstItem="HNz-FA-Mnc" firstAttribute="leading" secondItem="fve-o9-cGY" secondAttribute="leading" id="cKj-Lm-ONC"/>
                             <constraint firstItem="enQ-Ex-pT4" firstAttribute="leading" secondItem="Op5-KX-foY" secondAttribute="trailing" constant="20" id="kEZ-nH-nIs"/>
+                            <constraint firstAttribute="trailing" secondItem="qrT-T2-sTH" secondAttribute="trailing" constant="20" id="lAD-bD-3Wm"/>
                             <constraint firstItem="enQ-Ex-pT4" firstAttribute="top" secondItem="Op5-KX-foY" secondAttribute="top" id="oUo-CM-qga"/>
+                            <constraint firstItem="HNz-FA-Mnc" firstAttribute="top" secondItem="fve-o9-cGY" secondAttribute="bottom" constant="29" id="r7F-fc-HaB"/>
                             <constraint firstItem="C2Q-KG-f0h" firstAttribute="leading" secondItem="enQ-Ex-pT4" secondAttribute="leading" id="vlf-xc-29K"/>
                             <constraint firstItem="C2Q-KG-f0h" firstAttribute="trailing" secondItem="enQ-Ex-pT4" secondAttribute="trailing" id="wdP-kF-Vm1"/>
                             <constraint firstItem="C2Q-KG-f0h" firstAttribute="top" secondItem="enQ-Ex-pT4" secondAttribute="bottom" constant="29" id="woz-pt-fpR"/>
+                            <constraint firstItem="Fm8-Vi-TAv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="zD6-fG-WNc"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="imgUserName" destination="qrT-T2-sTH" id="svy-1T-TAz"/>
                         <outlet property="imgView" destination="Op5-KX-foY" id="ZzE-Dx-eVj"/>
                         <outlet property="txtName" destination="enQ-Ex-pT4" id="0WU-wj-Igv"/>
+                        <outlet property="txtUserName" destination="fve-o9-cGY" id="SX1-Xj-TYJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
