@@ -30,7 +30,7 @@ class SSImageView: UIImageView {
         }
     }
     
-    func setTextOnImage(originalText : String) {
+    func setTextToImage(originalText : String) {
         
         let dictAttribute : [String : AnyObject] = [NSFontAttributeName:UIFont.systemFontOfSize(fontSize),NSForegroundColorAttributeName:UIColor.whiteColor()]
         
