@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="InitialLatter" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Shreyansh Shah" borderStyle="line" textAlignment="justified" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="enQ-Ex-pT4">
+                                <rect key="frame" x="190" y="25" width="390" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ybd-yq-Cae"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C2Q-KG-f0h">
+                                <rect key="frame" x="190" y="104" width="390" height="42"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                <state key="normal" title="Refresh">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="refreshBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UgD-cx-Z60"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Op5-KX-foY" customClass="SSImageView" customModule="InitialLatter" customModuleProvider="target">
+                                <rect key="frame" x="20" y="25" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="Tl4-kz-Krb"/>
+                                    <constraint firstAttribute="width" constant="150" id="YX7-HE-K6P"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Op5-KX-foY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="IEY-MX-4f5"/>
+                            <constraint firstAttribute="trailing" secondItem="enQ-Ex-pT4" secondAttribute="trailing" constant="20" id="Q7z-ps-uUE"/>
+                            <constraint firstItem="Op5-KX-foY" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="25" id="WIe-3g-FEj"/>
+                            <constraint firstItem="enQ-Ex-pT4" firstAttribute="leading" secondItem="Op5-KX-foY" secondAttribute="trailing" constant="20" id="kEZ-nH-nIs"/>
+                            <constraint firstItem="enQ-Ex-pT4" firstAttribute="top" secondItem="Op5-KX-foY" secondAttribute="top" id="oUo-CM-qga"/>
+                            <constraint firstItem="C2Q-KG-f0h" firstAttribute="leading" secondItem="enQ-Ex-pT4" secondAttribute="leading" id="vlf-xc-29K"/>
+                            <constraint firstItem="C2Q-KG-f0h" firstAttribute="trailing" secondItem="enQ-Ex-pT4" secondAttribute="trailing" id="wdP-kF-Vm1"/>
+                            <constraint firstItem="C2Q-KG-f0h" firstAttribute="top" secondItem="enQ-Ex-pT4" secondAttribute="bottom" constant="29" id="woz-pt-fpR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imgView" destination="Op5-KX-foY" id="ZzE-Dx-eVj"/>
+                        <outlet property="txtName" destination="enQ-Ex-pT4" id="0WU-wj-Igv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="224" y="415"/>
+        </scene>
+    </scenes>
+</document>
