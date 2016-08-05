@@ -18,7 +18,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         if txtName.text!.characters.count > 0{
-            imgView.setTextOnImage(txtName.text!)
+            imgView.setTextToImage(txtName.text!)
         }
     }
     
@@ -27,7 +27,7 @@ class ViewController: UIViewController {
         
         if txtName.text!.characters.count > 0{
             
-            imgView.setTextOnImage(txtName.text!)
+            imgView.setTextToImage(txtName.text!)
             
         }else{
             
