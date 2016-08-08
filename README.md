@@ -1,4 +1,7 @@
 # SSImageView
+
+![alt tag](https://www.dropbox.com/s/h6gfxam6vit5wht/Simulator%20Screen%20Shot%2008-Aug-2016%2C%202.20.21%20PM.png?dl=0)
+
 Download "SSImageView.swift" file and add into you project.
 
 Add "QuartzCore" framework in your project.
